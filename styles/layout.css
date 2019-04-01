@@ -1,0 +1,104 @@
+
+body{
+  background: url('../images/space.png') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-areas: 
+        "title title"
+        "main  main"
+        "main  main"
+        "ad1   ad1"
+        "ad2   ad2"
+        "foot  foot "; 
+}
+
+#logo{
+  width: 30%;
+}
+
+.header{
+  grid-area: title;
+  margin-top: 2px;
+} 
+
+.main{
+  grid-area: main;
+  background-color: rgba(255, 255, 255, 0.05)
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.ad1 {
+  grid-area: ad1;
+  background-color: rgba(255, 255, 255, 0.05)
+
+}
+.ad2 {
+  grid-area: ad2;
+}
+
+.foot {
+  grid-area: foot;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+img {
+  width: 30%
+}
+
+
+@media only screen and (min-width: 650px){
+  body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    grid-template-areas: 
+          "title title  title"
+          "main  main   main"
+          "main  main   main"
+          "ad1   ad1    ad2"
+          "foot  foot   foot"; 
+  }
+
+  #logo{
+  width: 20%;
+  }
+
+}
+
+@media only screen and (min-width: 1000px){
+  body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    grid-template-areas: 
+          "title  title  title"
+          "main   main   ad1"
+          "main   main   ad2"
+          "foot   foot   foot"; 
+  }
+
+  #logo{
+  width: 15%;
+  }
+
+}
+
+
+
+
+
+
+
+
