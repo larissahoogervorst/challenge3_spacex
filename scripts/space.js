@@ -1,7 +1,7 @@
 function getAPIdata() {
 
 	// request API
-	var request = 'https://api.open-notify.org/astros.json';
+	var request = 'http://api.open-notify.org/astros.json';
 
 	// get current weather
 	fetch(request)	
